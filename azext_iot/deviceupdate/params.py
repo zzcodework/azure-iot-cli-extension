@@ -15,6 +15,7 @@ from azure.cli.core.commands.parameters import (
     tags_type,
 )
 from azext_iot.deviceupdate.common import (
+    ADUDownloadSecurity,
     ADUPublicNetworkAccessType,
     ADUPrivateLinkServiceConnectionStatus,
     ADUAccountSKUType,
@@ -425,6 +426,13 @@ def load_deviceupdate_arguments(self, _):
             help="Integer representing the percentage of failed devices in a deployment before a cloud initated rollback occurs. "
             "Required when defining rollback policy.",
             arg_group="Update Rollback Policy",
+        )
+        context.argument(
+            "download_security",
+            options_list=["--download-security", "--ds"],
+            help="Update content download protocol. Reserved for data plane API version 2026-07-01; "
+            "accepted today but not yet sent to the service.",
+            arg_type=get_enum_type(ADUDownloadSecurity),
         )
 
     with self.argument_context("iot du device log") as context:

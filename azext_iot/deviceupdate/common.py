@@ -12,6 +12,15 @@ from enum import Enum
 from typing import List
 
 
+class ADUDownloadSecurity(Enum):
+    """
+    ADU update content download protocol selection (data plane API 2026-07-01).
+    """
+
+    HTTP = "Http"
+    HTTPS = "Https"
+
+
 class ADUPublicNetworkAccessType(Enum):
     """
     ADU public network access type.
