@@ -38,7 +38,7 @@ class DeviceUpdateClient:  # pylint: disable=client-accepts-api-version-keyword
     :type endpoint: str
     :param instance_id: The Device Update for IoT Hub account instance identifier. Required.
     :type instance_id: str
-    :keyword api_version: Api Version. Default value is "2022-10-01". Note that overriding this
+    :keyword api_version: Api Version. Default value is "2026-06-01". Note that overriding this
      default value may result in unsupported behavior.
     :paramtype api_version: str
     :keyword int polling_interval: Default waiting time between two polls for LRO operations if no
