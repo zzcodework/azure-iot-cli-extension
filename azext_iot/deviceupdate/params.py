@@ -430,7 +430,7 @@ def load_deviceupdate_arguments(self, _):
         context.argument(
             "download_security",
             options_list=["--download-security", "--ds"],
-            help="Update content download protocol. Reserved for data plane API version 2026-07-01; "
+            help="Update content download protocol. Reserved for data plane API version 2026-06-01; "
             "accepted today but not yet sent to the service.",
             arg_type=get_enum_type(ADUDownloadSecurity),
         )

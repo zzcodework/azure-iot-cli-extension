@@ -14,7 +14,7 @@ from typing import List
 
 class ADUDownloadSecurity(Enum):
     """
-    ADU update content download protocol selection (data plane API 2026-07-01).
+    ADU update content download protocol selection (data plane API 2026-06-01).
     """
 
     HTTP = "Http"

@@ -55,8 +55,8 @@ def create_deployment(
     download_security: Optional[str] = None,
     resource_group_name: Optional[str] = None,
 ):
-    # TODO(2026-07-01 api-version): wire `download_security` into the deployment
-    # request once the data plane Swagger for 2026-07-01 is published and the SDK
+    # TODO(2026-06-01 api-version): wire `download_security` into the deployment
+    # request once the data plane Swagger for 2026-06-01 is published and the SDK
     # is regenerated. For now the value is intentionally not forwarded to the
     # service so existing 2022-10-01 calls remain unchanged.
     _ = download_security
